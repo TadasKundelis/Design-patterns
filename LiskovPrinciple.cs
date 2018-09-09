@@ -46,7 +46,7 @@ List<Duck> DuckList = new List<Duck>();
 DuckList.Add(new Duck());
 DuckList.Add(new RubberDuck());
 
-foreach (Duck duck in FlyingDuckList)
+foreach (Duck duck in DuckList)
 {
     duck.Fly();
 }
