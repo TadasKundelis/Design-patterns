@@ -42,13 +42,13 @@ public class RubberDuck : Duck
 
 Now, if we have the following code: 
 
-List<Duck> FlyingDuckList = new List<Duck>();
-FlyingDuckList.Add(new Duck());
-FlyingDuckList.Add(new RubberDuck());
+List<Duck> DuckList = new List<Duck>();
+DuckList.Add(new Duck());
+DuckList.Add(new RubberDuck());
 
-foreach (Duck flyingDuck in FlyingDuckList)
+foreach (Duck duck in FlyingDuckList)
 {
-    flyingDuck.Fly();
+    duck.Fly();
 }
 
 the second item in the list, of type RubberDuck, will throw an Exception.
