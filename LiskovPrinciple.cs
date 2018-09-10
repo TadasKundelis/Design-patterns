@@ -65,7 +65,7 @@ public class RubberDuck : IHaveWings
         return true;
     }
 }
-}
+
 
 /* 
 
