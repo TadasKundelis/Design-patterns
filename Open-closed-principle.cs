@@ -38,7 +38,6 @@ public double Area(object[] shapes)
             area += circle.Radius * circle.Radius * Math.PI;
         }
     }
-
     return area;
 }
 
@@ -76,7 +75,6 @@ public double Area(Shape[] shapes)
     {
         area += shape.Area();
     }
-
     return area;
 }
 
