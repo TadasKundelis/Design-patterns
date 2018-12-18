@@ -40,9 +40,10 @@ namespace Composite_pattern
             return Subordinates;
         }
 
-        public void GetDetails()
+        public void GetDetails(int indentation = 0)
         {
-            Console.WriteLine("Employee name: {0}, works in department: {1}", Name, Department);
+            string dashes = new String('-', indentation);
+            Console.WriteLine("{0}Employee name: {1}, works in department: {2}", dashes, Name, Department);
         }
 
         public void GetSubordinateDetails()
@@ -50,7 +51,7 @@ namespace Composite_pattern
             Console.WriteLine("{0}'s subordinates", Name);
             foreach(Employee employee in Subordinates)
             {
-                employee.GetDetails();
+                employee.GetDetails(indentation: 2);
             }
         }
     }
