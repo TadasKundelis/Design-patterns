@@ -29,10 +29,15 @@ namespace Composite_pattern
 
             CEO.GetDetails();
             CEO.GetSubordinateDetails();
+            Console.WriteLine();
+
             headOfHr.GetDetails();
             headOfHr.GetSubordinateDetails();
+            Console.WriteLine();
+
             headOfManagement.GetDetails();
             headOfManagement.GetSubordinateDetails();
+            Console.WriteLine();
             recruiter.GetDetails();
             manager.GetDetails();
 
